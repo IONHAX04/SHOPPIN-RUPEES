@@ -1,0 +1,188 @@
+.homeContents {
+  margin-block-end: 30px;
+}
+
+.horizontalScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.scroll-item {
+  margin-inline-end: 10px;
+}
+.icon-card {
+  block-size: 50px;
+  inline-size: 50px;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-card {
+  inline-size: 150px;
+  block-size: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.restaurant-image {
+  inline-size: 150px;
+  block-size: 100px;
+  object-fit: cover;
+}
+
+.restaurant-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.restaurantInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.ad-label {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #ff0000;
+}
+
+.distance-rating {
+  font-size: 0.7rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconStyle {
+  font-size: 30px;
+}
+
+.icon-label {
+  display: block;
+  text-align: center;
+  margin-block-start: 8px;
+  font-size: 14px;
+  /* color: #ffffff; */
+}
+
+.recommendationFeeds {
+  padding: 20px 10px;
+}
+
+.ionCards {
+  border-radius: 10px;
+}
+
+/* BANNER */
+.bannerContainer {
+  display: flex;
+  inline-size: 100%;
+  block-size: 200px;
+  margin-block-start: 16px;
+}
+
+.bannerContent {
+  flex: 65%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerLottie {
+  flex: 35%;
+  inline-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+/* BLOGS */
+.blogCard {
+  block-size: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.blogCardImage {
+  inline-size: 100%;
+  block-size: 150px;
+  border-start-start-radius: 10px;
+  border-start-end-radius: 10px;
+  object-fit: cover;
+  /* border-radius: 8px; */
+}
+
+.blogCardContents {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.blogCardTitle {
+  font-size: 1.2em;
+  margin-block-start: 10px;
+  font-weight: bolder;
+  margin-block-end: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blogCardDescription {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.blogCardFooter {
+  text-align: end;
+  font-size: 13px;
+}
+
+.viewBlog {
+  color: #3880ff;
+  text-decoration: none;
+}
+
+.viewBlog:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .blogCard {
+    margin: 5px;
+  }
+}
+
+.headerContent .title-default {
+  font-weight: bolder;
+}
+
+.horizontalScroll .scroll-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
