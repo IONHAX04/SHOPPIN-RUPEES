@@ -1,0 +1,16 @@
+.loginForm {
+  block-size: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sc-ion-input-md-h.sc-ion-input-md-s.md.input-fill-outline.input-label-placement-floating {
+  color: black;
+}
+
+ion-input {
+  margin-block-start: 30px;
+}

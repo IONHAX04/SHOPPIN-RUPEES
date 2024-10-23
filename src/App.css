@@ -20,11 +20,6 @@
   padding: 10vh;
 }
 
-.loginForm {
-  background-color: white;
-  block-size: 100vh;
-}
-
 .header-md {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -59,4 +54,8 @@ ion-card {
 
 .horizontalScroll {
   scrollbar-width: none;
+}
+
+ion-segment {
+  block-size: 40px;
 }

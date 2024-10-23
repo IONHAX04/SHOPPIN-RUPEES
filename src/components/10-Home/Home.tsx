@@ -1,28 +1,6 @@
 import React from "react";
 
-import {
-  IonSearchbar,
-  IonToolbar,
-  IonContent,
-  IonRow,
-  IonGrid,
-  IonCol,
-  IonCard,
-  IonTitle,
-  IonButton,
-  IonButtons,
-  IonIcon,
-  IonCardContent,
-  IonCardHeader,
-  IonCardTitle,
-} from "@ionic/react";
-import {
-  cardOutline,
-  carOutline,
-  cubeOutline,
-  fastFoodOutline,
-  listOutline,
-} from "ionicons/icons";
+import { IonRow, IonGrid } from "@ionic/react";
 import IconCards from "../../pages/IconCards/IconCards";
 
 import grocery from "../../assets/home/grocery.svg";

@@ -16,7 +16,7 @@ import "@ionic/react/css/display.css";
 
 import "./App.css";
 
-// import "@ionic/react/css/palettes/dark.system.css";
+import "@ionic/react/css/palettes/dark.system.css";
 
 import "./theme/variables.css";
 import MainPage from "./components/00-Main/MainPage";
@@ -38,7 +38,8 @@ const App: React.FC = () => {
   return (
     <IonApp>
       {/* {showSplash ? <Splash /> : <Login />} */}
-      <MainPage />
+      <Login />
+      {/* <MainPage /> */}
     </IonApp>
   );
 };

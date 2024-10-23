@@ -1,18 +1,24 @@
 import React from "react";
-import { IonApp, IonInput } from "@ionic/react";
+import { IonInput } from "@ionic/react";
 
+import "./Login.css";
 const Login: React.FC = () => {
   return (
     <div className="loginForm">
-      <IonApp>
+      <div className="loginContents">
         <IonInput
-          label="Outline input"
+          label="First Name"
           labelPlacement="floating"
           fill="outline"
-          placeholder="Enter text"
+          placeholder="Enter First Name"
         ></IonInput>
-        <input placeholder="testing" />
-      </IonApp>
+        <IonInput
+          label="Last Name"
+          labelPlacement="floating"
+          fill="outline"
+          placeholder="Enter Last Name"
+        ></IonInput>
+      </div>
     </div>
   );
 };

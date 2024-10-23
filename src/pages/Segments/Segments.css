@@ -1,0 +1,15 @@
+.emptyBasket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  block-size: 60vh;
+}
+
+.offerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  color: #0054e9;
+}

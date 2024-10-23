@@ -5,8 +5,8 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
 import "./Tab4.css";
+import Cart from "../components/14-Cart/Cart";
 
 const Tab5: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Tab5: React.FC = () => {
             <IonTitle size="large">Cart</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Cart" />
+        <Cart />
       </IonContent>
     </IonPage>
   );
