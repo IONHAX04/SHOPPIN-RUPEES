@@ -7,6 +7,9 @@ import {
   IonIcon,
   IonLabel,
   IonPage,
+  IonTabBar,
+  IonTabButton,
+  IonTabs,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
@@ -140,6 +143,11 @@ const ViewProduct: React.FC = () => {
           <div className="divider"></div>
           <div className="highlights">
             <h5>Highlights</h5>
+          </div>
+
+          <div className="buttons">
+            <button className="placeOrder">Place Order</button>
+            <button className="addCart">Add to Cart</button>
           </div>
         </div>
       </IonContent>

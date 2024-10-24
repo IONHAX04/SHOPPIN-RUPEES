@@ -158,3 +158,33 @@ ion-title {
 .freeDelivery p span {
   color: blue;
 }
+
+.productOverview .buttons {
+  display: flex;
+  inline-size: 100%;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  position: fixed;
+}
+
+.productOverview .buttons button {
+  inline-size: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.productOverview .buttons .placeOrder {
+  background: #0054e9;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.productOverview .buttons .addCart {
+  border: 1px solid #0054e9;
+  color: #0054e9;
+  font-weight: bold;
+  background-color: white;
+  text-transform: uppercase;
+}

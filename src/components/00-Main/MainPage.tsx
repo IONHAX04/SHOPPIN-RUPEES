@@ -27,6 +27,16 @@ import Tab5 from "../../pages/Tab5";
 import ViewProduct from "../../pages/ViewProduct/ViewProduct";
 
 const MainPage: React.FC = () => {
+  const shouldShowTabBar = [
+    "/",
+    "",
+    "/tab1",
+    "/tab2",
+    "/tab3",
+    "/tab4",
+    "/tab5",
+  ].includes(location.pathname);
+
   return (
     <div>
       <IonReactRouter>
@@ -52,28 +62,30 @@ const MainPage: React.FC = () => {
             </Route>
             <Route exact path="/viewProducts" component={ViewProduct} />
           </IonRouterOutlet>
-          <IonTabBar slot="bottom">
-            <IonTabButton tab="tab1" href="/tab1">
-              <IonIcon aria-hidden="true" icon={homeOutline} />
-              <IonLabel>Home</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="tab2" href="/tab2">
-              <IonIcon aria-hidden="true" icon={planetOutline} />
-              <IonLabel>Explore</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="tab3" href="/tab3">
-              <IonIcon aria-hidden="true" icon={personOutline} />
-              <IonLabel>Profile</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="tab4" href="/tab4">
-              <IonIcon aria-hidden="true" icon={gridOutline} />
-              <IonLabel>Categories</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="tab5" href="/tab5">
-              <IonIcon aria-hidden="true" icon={cartOutline} />
-              <IonLabel>Cart</IonLabel>
-            </IonTabButton>
-          </IonTabBar>
+          {shouldShowTabBar && (
+            <IonTabBar slot="bottom">
+              <IonTabButton tab="tab1" href="/tab1">
+                <IonIcon aria-hidden="true" icon={homeOutline} />
+                <IonLabel>Home</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="tab2" href="/tab2">
+                <IonIcon aria-hidden="true" icon={planetOutline} />
+                <IonLabel>Explore</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="tab3" href="/tab3">
+                <IonIcon aria-hidden="true" icon={personOutline} />
+                <IonLabel>Profile</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="tab4" href="/tab4">
+                <IonIcon aria-hidden="true" icon={gridOutline} />
+                <IonLabel>Categories</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="tab5" href="/tab5">
+                <IonIcon aria-hidden="true" icon={cartOutline} />
+                <IonLabel>Cart</IonLabel>
+              </IonTabButton>
+            </IonTabBar>
+          )}
         </IonTabs>
       </IonReactRouter>
     </div>
