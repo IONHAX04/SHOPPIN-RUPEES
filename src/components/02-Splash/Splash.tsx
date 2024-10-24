@@ -1,12 +1,10 @@
 import React from "react";
-import Lottie from "lottie-react";
-import splash from "../../assets/splash/splash.json";
+import splash from "../../assets/cart/introGif.gif";
 
 const Splash: React.FC = () => {
   return (
     <div className="splashScreen">
-      <Lottie animationData={splash} loop={true} />
-      <p className="bottomText">Shop In Rupees</p>
+      <img src={splash} alt="Splash Screen" className="splashImage" />
     </div>
   );
 };

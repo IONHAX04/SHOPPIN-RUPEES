@@ -24,6 +24,7 @@ import Tab2 from "../../pages/Tab2";
 import Tab3 from "../../pages/Tab3";
 import Tab4 from "../../pages/Tab4";
 import Tab5 from "../../pages/Tab5";
+import ViewProduct from "../../pages/ViewProduct/ViewProduct";
 
 const MainPage: React.FC = () => {
   return (
@@ -49,6 +50,7 @@ const MainPage: React.FC = () => {
             <Route exact path="/">
               <Redirect to="/tab1" />
             </Route>
+            <Route exact path="/viewProducts" component={ViewProduct} />
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
             <IonTabButton tab="tab1" href="/tab1">

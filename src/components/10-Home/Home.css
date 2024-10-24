@@ -9,9 +9,6 @@
   padding: 10px 0;
 }
 
-.scroll-item {
-  margin-inline-end: 10px;
-}
 .icon-card {
   block-size: 50px;
   inline-size: 50px;
@@ -60,6 +57,11 @@
   font-size: 0.7rem;
 }
 
+.distance-ratings {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .headerContent {
   display: flex;
   justify-content: space-between;
@@ -79,7 +81,8 @@
 }
 
 .recommendationFeeds {
-  padding: 20px 10px;
+  padding: 20px 0px;
+  background: rgb(242, 242, 242);
 }
 
 .ionCards {
@@ -185,4 +188,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* VIEW PRODUCT */
+.viewProduct {
+  block-size: 100vh;
+  background-color: black;
 }

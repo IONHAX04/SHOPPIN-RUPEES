@@ -59,3 +59,102 @@ ion-card {
 ion-segment {
   block-size: 40px;
 }
+
+ion-title {
+  font-family: "Playwrite GB S", cursive;
+}
+
+/* IMAGE CAROUSEL */
+
+.imageCarousel {
+  margin: 0px 13px;
+}
+
+.productRating {
+  padding: 0px 10px;
+}
+
+.overallStats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overallStats ion-icon {
+  padding: 6px;
+  color: green;
+  font-weight: bold;
+  background-color: greenyellow;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.overallStats p {
+  padding-inline-start: 10px;
+}
+
+.productOverview .addressHeader {
+  background-color: rgb(237, 237, 237);
+}
+
+.productOverview .divider {
+  block-size: 5px;
+  background-color: rgb(237, 237, 237);
+  inline-size: 100%;
+  margin: 16px 0;
+}
+
+.productOverview .productDetailsHeader {
+  padding: 0px 10px;
+}
+
+.productOverview .ratings {
+  display: flex;
+  align-items: center;
+  margin-block-start: -15px;
+}
+
+.productOverview .ratings p {
+  padding-inline-start: 15px;
+}
+
+.productOverview .offerSale {
+  inline-size: 60%;
+  padding: 1px 10px;
+  margin-block-start: -12px;
+}
+
+.productOverview .offerSale .pricing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productOverview .offerSale .pricing .strikeOut {
+  text-decoration: line-through;
+}
+
+.productOverview .offerSale .pricing span,
+.productOverview .offerSale .pricing span {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+.productOverview .offerSale .pricing .price {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.freeDelivery {
+  margin-inline-start: 10px;
+  margin-block-start: 5px;
+}
+
+.freeDelivery p {
+  margin-block-start: -10px;
+}
+
+.freeDelivery p span {
+  color: blue;
+}

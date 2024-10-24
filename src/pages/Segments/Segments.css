@@ -13,3 +13,114 @@
   padding: 5px 20px;
   color: #0054e9;
 }
+
+.products .banner h5 {
+  font-family: "Playwrite GB S", cursive;
+  text-align: center;
+  font-weight: bold;
+}
+
+.products .banner h3 {
+  font-family: "Arima", serif;
+  text-align: center;
+}
+
+.cartCards {
+  inline-size: 8rem;
+  border: 1px solid rgba(0, 0, 0, 0.277);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartCards .images img {
+  block-size: 70px;
+  inline-size: 70px;
+}
+.cartCards .images {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartCards .images p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.cartCards .images .pricing {
+  display: flex;
+  inline-size: 100%;
+  justify-content: space-between;
+}
+
+.cartCardHoriz {
+  display: flex;
+  overflow-x: auto;
+  padding: 3px;
+}
+
+.cartCardHoriz::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-item {
+  flex: 0 0 auto;
+  inline-size: 150px;
+  margin-inline-start: 6px;
+}
+
+.cartCards {
+  padding: 4px;
+}
+
+.cartCards .productName {
+  text-align: center;
+  margin-block-start: 5px;
+}
+
+.cartCards .pricing {
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+  display: flex;
+  inline-size: 100%;
+  justify-content: space-between;
+}
+
+.cartCards .addCart {
+  inline-size: 100%;
+  display: flex;
+  margin-block-start: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 10px;
+}
+
+.cartCards .addCart ion-label {
+  font-size: 0.8rem;
+  margin-inline-start: 4px;
+}
+
+.addressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.addressHeader ion-label {
+  font-size: 15px;
+}
+
+.addressHeader p {
+  font-size: 0.8rem;
+  color: #0054e9;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #0054e9;
+}

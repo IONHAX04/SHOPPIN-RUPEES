@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+	<g>
+		<path fill="#663c28" d="M128 24h256v280H128z" opacity="1" data-original="#663c28">
+		</path>
+		<path fill="#ad6643" d="m384 280-32 32v64l32 32z" opacity="1" data-original="#ad6643">
+		</path>
+		<path fill="#eb423f" d="M120 280h272v208H120z" opacity="1" data-original="#eb423f">
+		</path>
+		<path fill="#d13330" d="m120 488 32-32V280h-32zM392 488l-32-32V312h32z" opacity="1" data-original="#d13330">
+		</path>
+		<path fill="#f7cca9" d="m120 280 40 48 248 32-16-80z" opacity="1" data-original="#f7cca9">
+		</path>
+		<path fill="#962523" d="M152 456h208l32 32H120z" opacity="1" data-original="#962523">
+		</path>
+		<path fill="#8c5237" d="M160 56h64v64h-64zM288 56h64v64h-64z" opacity="1" data-original="#8c5237">
+		</path>
+		<g fill="#ad6643">
+			<path d="m256 24-32 32v64l32 32zM128 24l32 32h64l32-32zM384 24l-32 32v64l32 32zM256 24l32 32h64l32-32z" fill="#ad6643" opacity="1" data-original="#ad6643">
+			</path>
+		</g>
+		<path fill="#8c5237" d="M160 184h64v64h-64zM288 184h64v64h-64z" opacity="1" data-original="#8c5237">
+		</path>
+		<path fill="#ad6643" d="m256 152-32 32v64l32 32zM128 152l32 32h64l32-32zM384 152l-32 32v64l32 32zM256 152l32 32h64l32-32z" opacity="1" data-original="#ad6643">
+		</path>
+	</g>
+</svg>

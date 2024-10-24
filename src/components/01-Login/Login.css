@@ -1,10 +1,19 @@
 .loginForm {
   block-size: 100vh;
-  background: white;
   display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.loginContents {
+  block-size: 70vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 
 .sc-ion-input-md-h.sc-ion-input-md-s.md.input-fill-outline.input-label-placement-floating {
@@ -12,5 +21,9 @@
 }
 
 ion-input {
-  margin-block-start: 30px;
+  margin-block-start: 10px;
+}
+
+.loginContents ion-button {
+  inline-size: 100%;
 }
