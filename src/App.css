@@ -64,6 +64,10 @@ ion-title {
   font-family: "Playwrite GB S", cursive;
 }
 
+.ion-page {
+  background-color: white !important;
+}
+
 /* IMAGE CAROUSEL */
 
 .imageCarousel {
@@ -156,10 +160,10 @@ ion-title {
 }
 
 .freeDelivery p span {
-  color: blue;
+  color: 0054e9;
 }
 
-.productOverview .buttons {
+.buttons {
   display: flex;
   inline-size: 100%;
   inset-block-end: 0;
@@ -168,23 +172,27 @@ ion-title {
   position: fixed;
 }
 
-.productOverview .buttons button {
+.buttons button {
   inline-size: 50%;
   padding: 15px;
   box-sizing: border-box;
 }
 
-.productOverview .buttons .placeOrder {
+.buttons .placeOrder {
   background: #0054e9;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.productOverview .buttons .addCart {
+.buttons .addCart {
   border: 1px solid #0054e9;
   color: #0054e9;
   font-weight: bold;
   background-color: white;
   text-transform: uppercase;
+}
+
+.productOverview .highlights h5 {
+  margin-inline-start: 10px;
 }

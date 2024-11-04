@@ -124,3 +124,24 @@
   border-radius: 4px;
   border: 1px solid #0054e9;
 }
+
+/* ALL ITEMS */
+.cartContents .cartStarting {
+  display: flex;
+  align-items: center;
+}
+
+.cartContents .cartStarting .cartProduct {
+  padding-inline-start: 10px;
+}
+
+.cartContents .cartEnding {
+  display: flex;
+  align-items: center;
+}
+
+.cartContents {
+  inline-size: 100%;
+  display: flex;
+  justify-content: space-between;
+}

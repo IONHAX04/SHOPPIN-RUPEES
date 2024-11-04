@@ -20,6 +20,8 @@
     "@capacitor/status-bar": "6.0.1",
     "@ionic/react": "^8.0.0",
     "@ionic/react-router": "^8.0.0",
+    "@progress/kendo-react-buttons": "^8.5.0",
+    "@progress/kendo-react-layout": "^8.5.0",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
     "ionicons": "^7.0.0",
@@ -27,9 +29,11 @@
     "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.53.1",
     "react-router": "^5.3.4",
     "react-router-dom": "^5.3.4",
-    "shoppify": "file:"
+    "shoppify": "file:",
+    "state-stepper": "^2.0.4"
   },
   "devDependencies": {
     "@capacitor/cli": "6.1.2",

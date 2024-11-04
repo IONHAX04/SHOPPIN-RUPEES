@@ -1,30 +1,25 @@
+import React from "react";
+import { useHistory } from "react-router-dom";
+
 import {
-  IonApp,
   IonBackButton,
   IonButtons,
   IonContent,
   IonHeader,
-  IonIcon,
-  IonLabel,
   IonPage,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
   IonTitle,
   IonToolbar,
+  IonIcon,
+  IonLabel,
 } from "@ionic/react";
 import {
   arrowDownOutline,
-  chevronDownOutline,
-  locationOutline,
   star,
   starHalf,
-  trendingDownOutline,
-  trendingUpOutline,
   trendingUpSharp,
 } from "ionicons/icons";
-import React from "react";
 import { useLocation } from "react-router-dom";
+import AccordionGroup from "../Accordion/AccordionGroup";
 
 interface Blog {
   imageSrc: string;
@@ -33,7 +28,6 @@ interface Blog {
   distance?: string;
   rating?: string;
 }
-
 interface LocationState {
   blog: Blog | null;
 }
@@ -41,6 +35,51 @@ interface LocationState {
 const ViewProduct: React.FC = () => {
   const location = useLocation<LocationState>();
   const blog = location.state?.blog;
+
+  const history = useHistory();
+
+  const accordionData = [
+    {
+      value: "first",
+      header: "Top Highlights",
+      content: [
+        { label: "Brand", value: "Example Brand" },
+        { label: "Operating System", value: "Example OS" },
+        { label: "RAM Memory Installed", value: "8GB" },
+        { label: "CPU Model", value: "Example CPU" },
+        { label: "CPU Speed", value: "2.5 GHz" },
+        { label: "Memory Storage", value: "256GB" },
+      ],
+    },
+    {
+      value: "second",
+      header: "Product Specifications",
+      content: [
+        { label: "High-resolution display", value: "" },
+        { label: "Long battery life", value: "" },
+        { label: "Lightweight and portable", value: "" },
+        { label: "Advanced security features", value: "" },
+        { label: "Durable and robust design", value: "" },
+      ],
+    },
+    {
+      value: "third",
+      header: "Warranty & Others",
+      content: [
+        { label: "Warranty Period", value: "1 Year" },
+        { label: "Manufacturing Date", value: "January 2024" },
+        { label: "Customer Support", value: "24/7 available" },
+        { label: "Repair and Return Policy", value: "30 days return" },
+      ],
+    },
+  ];
+
+  const handlePlaceOrder = () => {
+    history.push({
+      pathname: "/placeOrderStepper",
+      state: { blog },
+    });
+  };
 
   if (!blog) {
     return (
@@ -55,8 +94,9 @@ const ViewProduct: React.FC = () => {
         </IonHeader>
         <IonContent>
           <p>
-            Blog content may be removed by the organization. Please try later{" "}
-            <br /> Thank you for your patience.
+            Blog content may be removed by the organization. Please try later.{" "}
+            <br />
+            Thank you for your patience.
           </p>
         </IonContent>
       </IonPage>
@@ -99,6 +139,7 @@ const ViewProduct: React.FC = () => {
             <IonIcon icon={trendingUpSharp}></IonIcon>
             <p>500 people ordered this in last 30 days</p>
           </div>
+
           <div className="divider"></div>
 
           <div className="productDetailsHeader">
@@ -140,15 +181,14 @@ const ViewProduct: React.FC = () => {
               <span>Activate Now</span>
             </p>
           </div>
-          <div className="divider"></div>
-          <div className="highlights">
-            <h5>Highlights</h5>
-          </div>
 
-          <div className="buttons">
-            <button className="placeOrder">Place Order</button>
-            <button className="addCart">Add to Cart</button>
-          </div>
+          <AccordionGroup data={accordionData} />
+        </div>
+        <div className="buttons">
+          <button className="placeOrder" onClick={handlePlaceOrder}>
+            Place Order
+          </button>
+          <button className="addCart">Add to Cart</button>
         </div>
       </IonContent>
     </IonPage>
