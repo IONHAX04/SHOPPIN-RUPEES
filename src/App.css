@@ -115,7 +115,8 @@ ion-title {
 .productOverview .ratings {
   display: flex;
   align-items: center;
-  margin-block-start: -15px;
+  justify-content: center;
+  margin-block-start: -5px;
 }
 
 .productOverview .ratings p {
@@ -142,7 +143,7 @@ ion-title {
 .productOverview .offerSale .pricing span {
   font-size: 18px;
   font-weight: bold;
-  color: green;
+  color: hsl(120, 100%, 25%);
 }
 
 .productOverview .offerSale .pricing .price {
@@ -194,5 +195,73 @@ ion-title {
 }
 
 .productOverview .highlights h5 {
+  margin-inline-start: 10px;
+}
+
+/* RATINGS STYLES */
+.ratingReviews .ratingHeaders {
+  margin-inline-start: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline-end: 10px;
+}
+
+.ratingReviews .ratingHeaders ion-button {
+  background-color: white;
+  color: #0054e9;
+  border-radius: 8px;
+  padding: 0px 10px !important;
+}
+
+/* .ratingReviews {
+  margin-block-end: 100px;
+} */
+
+.ratingStats {
+  display: flex;
+  align-items: center;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.verticalDivider {
+  inline-size: 1px; /* Thin width to create the divider line */
+  block-size: 50px; /* Adjust height as needed */
+  background-color: #ccc; /* Color of the divider line */
+  margin: 0 20px; /* Space around the divider */
+}
+
+/* RATINGS PROGRESS */
+
+.ratingStats ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ratingItem {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.progressBar {
+  inline-size: 100px;
+  block-size: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.progressFill {
+  block-size: 100%;
+  background-color: #4caf50;
+  border-radius: 4px 0 0 4px;
+}
+
+.ratingCount {
   margin-inline-start: 10px;
 }

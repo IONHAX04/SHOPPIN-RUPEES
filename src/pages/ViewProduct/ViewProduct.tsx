@@ -11,6 +11,7 @@ import {
   IonToolbar,
   IonIcon,
   IonLabel,
+  IonButton,
 } from "@ionic/react";
 import {
   arrowDownOutline,
@@ -183,7 +184,62 @@ const ViewProduct: React.FC = () => {
           </div>
 
           <AccordionGroup data={accordionData} />
+
+          <div className="divider"></div>
+
+          <div className="ratingReviews">
+            <div className="ratingHeaders">
+              <p>Ratings & Reviews</p>
+              <IonButton fill="outline">Rate Product</IonButton>
+            </div>
+            <div className="ratingStats">
+              <div className="overAllRatings">
+                <p>Average</p>
+                <div className="ratings">
+                  <IonIcon style={{ color: "#008000" }} icon={star}></IonIcon>
+                  <IonIcon style={{ color: "#008000" }} icon={star}></IonIcon>
+                  <IonIcon style={{ color: "#008000" }} icon={star}></IonIcon>
+                  <IonIcon style={{ color: "#008000" }} icon={star}></IonIcon>
+                  <IonIcon
+                    style={{ color: "#008000" }}
+                    icon={starHalf}
+                  ></IonIcon>
+                </div>
+
+                <p>4 ratings and 2 reviews</p>
+              </div>
+              <div className="verticalDivider"></div>
+              <div className="ratingStats">
+                <ul>
+                  {[
+                    { rating: 5, count: 1 },
+                    { rating: 4, count: 2 },
+                    { rating: 3, count: 0 },
+                    { rating: 2, count: 0 },
+                    { rating: 1, count: 1 },
+                  ].map((item) => (
+                    <li key={item.rating} className="ratingItem">
+                      {item.rating} <IonIcon size="" icon={star}></IonIcon>
+                      <div className="progressBar">
+                        <div
+                          className="progressFill"
+                          style={{ inlineSize: `${(item.count / 4) * 100}%` }}
+                        ></div>
+                      </div>
+                      <span className="ratingCount">{item.count}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="questions">
+            <p>Questions and Answers</p>
+            <p>Didn't get the rigth answer you are looking for</p>
+          </div>
         </div>
+
         <div className="buttons">
           <button className="placeOrder" onClick={handlePlaceOrder}>
             Place Order
